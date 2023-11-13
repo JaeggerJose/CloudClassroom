@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e93348e.css",
+    "main.js": "/static/js/main.d18dedcf.js",
+    "static/media/admin_add_labadmin.png": "/static/media/admin_add_labadmin.ab801a967d39bcd452a9.png",
+    "static/media/admin_labadminlist.png": "/static/media/admin_labadminlist.ffcb5e2069703fc0f656.png",
+    "static/media/labadmin_userlist.PNG": "/static/media/labadmin_userlist.30762aa83eb3c44d6219.PNG",
+    "static/media/labadmin_add_user.PNG": "/static/media/labadmin_add_user.97521bff030a7deb05ee.PNG",
+    "static/media/webtop_clc.JPG": "/static/media/webtop_clc.50e4bcb0670a2f9a705e.JPG",
+    "static/media/newjob_all.JPG": "/static/media/newjob_all.777b781e59b6a9cba8ed.JPG",
+    "static/media/exit_code.JPG": "/static/media/exit_code.0ffc60caef6e38d5aaf9.JPG",
+    "static/media/joblist.png": "/static/media/joblist.77963bd5b363f7586a17.png",
+    "static/media/system_requirement.JPG": "/static/media/system_requirement.8f1441059e8284b58492.JPG",
+    "static/media/action_button.jpg": "/static/media/action_button.cc05cad2febd0049976d.jpg",
+    "static/media/default_environment.JPG": "/static/media/default_environment.0372bfd05b2e2c962b52.JPG",
+    "static/media/connection.JPG": "/static/media/connection.055982dae0a8274abf0f.JPG",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1e93348e.css",
+    "static/js/main.d18dedcf.js"
+  ]
+}

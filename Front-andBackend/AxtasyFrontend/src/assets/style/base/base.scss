@@ -1,0 +1,36 @@
+$text-sm: 14px;
+$text-base: 16px;
+$text-lg: 18px;
+$text-xl: 28px;
+$text-2xl: 32px;
+$text-3xl: 36px;
+
+
+$sm:640px;
+$md:768px;
+$lg:1024px;
+$xl:1240px;
+
+@mixin xl() {
+    @media all and (min-width: $xl) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media all and (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media all and (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media all and (min-width: $sm) {
+        @content;
+    }
+}

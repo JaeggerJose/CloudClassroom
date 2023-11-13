@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=commit20221021145448100
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=1gb
+#SBATCH --output=/home/minghsuan/task/task_finished/output_commit20221021145448100.log
+#SBATCH --partition=COMPUTE1Q
+#SBATCH --account=root
+docker commit 68b07b0c4d67 20221021145448100:latest
+docker save -o /home/minghsuan/task/commit_tar/20221021145448100.tar 20221021145448100:latest
+docker rm -f 68b07b0c4d67

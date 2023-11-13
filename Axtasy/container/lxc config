@@ -1,0 +1,58 @@
+architecture: x86_64
+config:
+  boot.autostart: "true"
+  image.architecture: amd64
+  image.description: ubuntu 20.04 LTS amd64 (release) (20210720)
+  image.label: release
+  image.os: ubuntu
+  image.release: focal
+  image.serial: "20210720"
+  image.type: squashfs
+  image.version: "20.04"
+  limits.cpu: "8"
+  limits.memory: 32GB
+  raw.apparmor: mount fstype=nfs,
+  security.nesting: "true"
+  security.privileged: "true"
+  volatile.base_image: cea91a28441af36f088f3ae8b637499061518ea2d83c7560a2f7f33d74298968
+  volatile.eth0.host_name: veth2c398530
+  volatile.eth0.hwaddr: 00:16:3e:aa:56:05
+  volatile.eth1.host_name: maccd8575e9
+  volatile.eth1.hwaddr: 00:16:3e:5d:8d:a8
+  volatile.eth1.last_state.created: "false"
+  volatile.eth2.host_name: veth81096cd7
+  volatile.eth2.hwaddr: 00:16:3e:6e:b5:b8
+  volatile.idmap.base: "0"
+  volatile.idmap.current: '[]'
+  volatile.idmap.next: '[]'
+  volatile.last_state.idmap: '[]'
+  volatile.last_state.power: RUNNING
+  volatile.uuid: 7d8a54a7-4ccb-474e-abdd-ad95f3cd5cd4
+devices:
+  eth1:
+    name: eth1
+    nictype: macvlan
+    parent: enp226s0
+    type: nic
+  eth2:
+    name: eth2
+    nictype: bridged
+    parent: lxcbr0
+    type: nic
+  home:
+    path: /home
+    source: /home
+    type: disk
+  nas_1:
+    path: /mnt/nas_1
+    source: /mnt/nas_1
+    type: disk
+  raid:
+    path: /raid
+    source: /raid
+    type: disk
+ephemeral: false
+profiles:
+- default
+stateful: false
+description: ""

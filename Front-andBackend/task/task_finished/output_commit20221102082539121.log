@@ -1,0 +1,8 @@
+Error response from daemon: No such container: 20221102082539121:latest
+Error response from daemon: reference does not exist
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+Remove one or more containers

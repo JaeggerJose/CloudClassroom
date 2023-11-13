@@ -1,0 +1,47 @@
+.signup {
+    margin-top: 110px;
+    padding: 0 15px;
+    min-width: 350px;
+    @include sm {
+        padding: 0 30px;
+    }
+    .wrap {
+        margin: 0 auto;
+        padding: 20px 30px;
+        max-width: 700px;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-size: $text-xl;
+    }
+    form {
+        max-width: 380px;
+    }
+
+    .signup-feild {
+        margin-bottom: 2px;
+    }
+    
+    .feedback-area {
+        height: 20px;
+        
+        .feedback-text {
+            font-size: $text-sm;
+            color: $danger;
+        }
+    }
+
+    .signup-button {
+        width: 100%;
+        margin-top: 20px;
+
+        border: 0;
+        padding: 5px;
+        border-radius: 7px;
+        background-color: $primary;
+        color: white;
+    }
+
+}

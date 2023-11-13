@@ -1,0 +1,219 @@
+.table-responsive {
+    // width: 1200px;
+    // width: 1280px;
+}
+
+.labsystem {
+    padding-top: 20px;
+    background-color: rgb(242, 242, 242);
+    min-height: 100vh;
+    padding-bottom: 20px;
+    .usertype {
+        background-color: rgb(252, 241, 255);
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+    
+    .labsystem-title {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+    .test {
+        overflow-x: auto;
+        margin: 0 auto;
+        padding: 0 16px;
+        max-width: 1380px;
+        table {
+            // min-width: 1200px;
+            width: 100%;
+            table-layout: auto;
+
+        }   
+        th, td {
+            white-space: nowrap;
+            width: 1%;
+        }
+          
+    }
+    .table-section {
+        .execute {
+            border-radius: 10px;
+            // border: 2px solid purple;
+            max-width: 1680px;
+            margin: 0 auto;
+            padding: 10px 10px;
+        }
+    }
+
+    .table-section {
+        .sleep {
+            border-radius: 10px;
+            // border: 2px solid rgb(48, 117, 206);
+            max-width: 1680px;
+            margin: 0 auto;
+            padding: 10px 10px;
+        }
+    }
+
+    .table-wrapper {
+        // border: 2px solid rgb(56, 56, 56);
+    }
+    .column-imagetype {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 30px;
+        .imagename {
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    // .column-imagetype::after {
+    //     content: attr(data);
+    //     background-color: aqua;
+    //     position: absolute;
+        
+    //     transform: translateX(-50%) translateY(100%);
+    //     left: 50%;
+    //     top: 50%;
+    //     z-index: 5;
+    // }
+
+    a {
+        cursor: pointer;
+    }
+    button {
+        margin: 0 5px;
+    }
+
+    .btn-rebuild {
+        margin: 0;
+        border-radius: 0.25rem 0 0 0.25rem;
+    }
+    .input-rebuild {
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    .section-sep {
+        height: 40px;
+    }
+
+
+    .schedule-task-box-form {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 500;
+        top: 0;
+        background-color: rgba(125, 125, 125, 0.755);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 550px;
+            min-width: 400px;
+            height: 600px;
+            background-color: rgb(234, 234, 234);
+            border-radius: 10px;
+            padding: 25px 30px;
+            position: relative;
+            .btn-submit {
+                position: absolute;
+                bottom: 25px;
+            }
+
+            .schedule-task-box-form-close {
+                position: absolute;
+                right: 25px;
+                top: 25px;
+                cursor: pointer;
+            }
+
+            .errors {
+                color: red;
+            }
+
+            .scheduletypewrapper {
+                margin-bottom: 5px;
+                label {
+                    margin-right: 8px;
+                }
+            }
+
+            .specifictime {
+                .datetime {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .looptime {
+                &__period {
+                    margin-bottom: 5px;
+                }
+
+                &__range {
+                    margin-bottom: 8px;
+                }
+
+                .week-day-box {
+                    .week-day-wrapper {
+                        display: flex;
+                        // margin-top: 5px;
+                        margin-bottom: 10px;
+                        .week-day {
+                            width: 32px;
+                            height: 32px;
+                            padding: 5px;
+                            border-radius: 50%;
+                            background-color: #c2c2c2;
+                            text-align: center;
+                            cursor: pointer;
+                            margin-right: 2px;
+                        }
+                        .hightlight {
+                            background-color: #ff3f21;
+                            color: white;
+                        }
+                        
+                    }
+                    &-open {
+                        margin-bottom: 5px;
+                    }
+
+                    
+                }
+                .month-day-box {
+                    
+                    .month-day-wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        .month-day {
+                            width: 32px;
+                            height: 32px;
+                            padding: 5px;
+                            margin: 5px 5px;
+                            border-radius: 50%;
+                            background-color: #c2c2c2;
+                            text-align: center;
+                            cursor: pointer;
+                            margin-right: 2px;
+                        }
+                        .hightlight {
+                            background-color: #ff3f21;
+                            color: white;
+                        }
+                    }
+                    &-open {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

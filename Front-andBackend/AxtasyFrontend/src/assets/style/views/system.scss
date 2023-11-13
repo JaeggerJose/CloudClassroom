@@ -1,0 +1,321 @@
+.system {
+    padding: 20px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    .user {
+        margin-bottom: 5px;
+    }
+    .list {
+        background-color: #ffffff;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    }
+
+    .system-info {
+        .input-field {
+            .box-input {
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $gray-600;
+                &:focus  {
+                    border-bottom: 2px solid $primary;
+                }
+                &::placeholder {
+                    color: $gray-300;
+                }
+            }
+    
+            // .input-line {
+            //     background-color: $gray-300;
+            //     height: 1px;
+            //     width: 30%;
+            // }
+        }
+        select {
+            min-width: 60px;
+            width: max-content;
+        }
+    }
+    
+    .connect {
+        .input-field {
+            // border: 1px solid red;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            label {
+                // width: 80px;
+                padding-left: 5px;
+                cursor: pointer;
+            }
+            input {
+                // height: 25px;
+                // width: 130px;
+                // transform: scale(1.2);
+                cursor: pointer;
+            }
+            .deactive {
+                color: rgb(182, 182, 182);
+            }
+        }
+    }
+    .amount {
+        .input-field {
+            .box-input {
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $gray-600;
+                &:focus  {
+                    border-bottom: 2px solid $primary;
+                }
+                &::placeholder {
+                    color: $gray-300;
+                }
+            }
+    
+            // .input-line {
+            //     background-color: $gray-300;
+            //     height: 1px;
+            //     width: 30%;
+            // }
+        }
+    }
+
+    .task-remark {
+        .input-field {
+            .box-input {
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $gray-600;
+                &:focus  {
+                    border-bottom: 2px solid $primary;
+                }
+                &::placeholder {
+                    color: $gray-300;
+                }
+            }
+    
+            // .input-line {
+            //     background-color: $gray-300;
+            //     height: 1px;
+            //     width: 30%;
+            // }
+        }
+    }
+
+    .schedule {
+        .input-field {
+          
+            
+        }
+        div.scheduletypewrapper label {
+            margin-right: 8px;
+        }
+
+        .specifictime {
+            .datetime {
+                margin-top: 8px;
+            }
+        }
+        .looptime {
+            &__period {
+                margin: 10px 0;
+            }
+
+            &__range {
+               
+                align-items: center;
+                margin-bottom: 12px;
+                p {
+                    margin-right: 8px;
+                }
+                input {
+                    outline: none;
+                    width: 80px;
+                }
+            }
+            .day-box {
+                &-open {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .week-day-box {
+                .week-day-wrapper {
+                    display: flex;
+                    // margin-top: 5px;
+                    margin-bottom: 10px;
+                    .week-day {
+                        width: 32px;
+                        height: 32px;
+                        padding: 5px;
+                        border-radius: 50%;
+                        background-color: #c2c2c2;
+                        text-align: center;
+                        cursor: pointer;
+                        margin-right: 2px;
+                    }
+                    .hightlight {
+                        background-color: #ff3f21;
+                        color: white;
+                    }
+                    
+                }
+                &-open {
+                    margin-bottom: 5px;
+                }
+            }
+           
+            .month-day-box {
+                .month-day-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin-bottom: 5px;
+                    .month-day {
+                        width: 32px;
+                        height: 32px;
+                        padding: 5px;
+                        margin: 5px 5px;
+                        border-radius: 50%;
+                        background-color: #c2c2c2;
+                        text-align: center;
+                        cursor: pointer;
+                        margin-right: 2px;
+                    }
+                    .hightlight {
+                        background-color: #ff3f21;
+                        color: white;
+                    }
+                }
+                &-open {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .execute-time {
+        label {
+            padding-left: 3px;
+        }
+    }
+
+    .errors {
+        color: red;
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    .right-section {
+        // border: 1px solid red;
+// 
+        .tutor-video {
+            display: none;
+            @include xl {
+                display: block;
+            }
+        }
+
+        .system-example {
+            margin-top: 20px;
+        }
+
+        .select-part {
+            padding: 5px 5px;
+        }
+
+        p {
+            cursor: pointer;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+   
+
+    .box-seperate {
+        border-top: 1px dashed gray;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .btn-upload {
+        border: none;
+        width: 100%;
+        padding: 5px 0;
+        border-radius: 5px;
+        background-color: $primary;
+        color: #ffffff;
+        transition: all 0.2s;
+        &:hover {
+            background-color: #b909ff;
+            // box-shadow: 0px 0px 3px 2px rgba(240, 102, 226, 0.914) ;
+        }
+        &:disabled {
+            background-color: #b909ff7e;
+        }
+    }
+
+    .system-loading {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(173, 173, 173, 0.911);
+        top: 0;
+        left: 0;
+        z-index: 12;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .loading-box {
+            // border: 1px solid red;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+
+            .wrap {
+                margin: 0 auto;
+                .loader-box {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+                .hint {
+                    text-align: center;
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+                .text {
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+                .close-loading {
+                    text-decoration: underline;
+                    text-align: center;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+           
+            .loader {
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                background:conic-gradient(#0000 10%,#A21FF4);
+                -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+                animation:s3 1s infinite linear;
+                @keyframes s3 {to{transform: rotate(1turn)}}
+            }
+            
+
+        }
+    }
+    
+   
+}
+
+.react-date-picker__inputGroup {
+    // display: none;
+}

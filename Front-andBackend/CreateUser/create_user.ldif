@@ -1,0 +1,27 @@
+dn: cn=food,ou=Group,dc=ccllab,dc=edu,dc=tw
+cn: food
+gidNumber: 2344
+objectClass: top
+objectClass: posixGroup
+
+dn: uid=food,ou=People,dc=ccllab,dc=edu,dc=tw
+cn: food
+givenName: food
+sn: food
+uid: food
+uidNumber: 2344
+gidNumber: 2344
+homeDirectory: /home/food
+loginShell: /bin/bash
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+shadowFlag: 0
+shadowMin: 0
+shadowMax: 99999
+shadowWarning: 0
+shadowInactive: 99999
+shadowLastChange: 12011
+shadowExpire: 99999
+userPassword: {SSHA}x

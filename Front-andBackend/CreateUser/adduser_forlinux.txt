@@ -1,0 +1,4 @@
+useradd -b /nethome -s /sbin/nologin -u 5159 -U arc815
+
+#this command is used to add user, user group in linux os and export information in to /etc/passwd,
+#that the get_empty_userid.sh can detect the new added userid and group
