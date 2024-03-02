@@ -1,2 +1,0 @@
-#!/bin/bash
-ldapsearch -b 'dc=example,dc=com,dc=tw' -H 'ldap://192.168.0.0/' -x '(&(objectClass=posixAccount)(uid='"$1"'))' sshPublicKey | sed -n '/^ /{H;d};/sshPublicKey:/x;$g;s/\n *//g;s/sshPublicKey: //gp'
