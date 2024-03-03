@@ -9,8 +9,16 @@ from rest_framework import viewsets, permissions
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
+    
+from rest_framework_simplejwt.views import TokenObtainPairView
+from .serializers import MyTokenObtainPairSerializer
+
+class MyTokenObtainPairView(TokenObtainPairView):
+    serializer_class = MyTokenObtainPairSerializer
+
 
 @api_view(['GET', 'POST'])
 def cluster(request):
@@ -22,7 +30,6 @@ def cluster(request):
     elif request.method == 'POST':
         # get a cluster's info
         name = request.data.get('name')
-        
         # check if the cluster exists
         try:
             cluster = Cluster.objects.get(name=name)

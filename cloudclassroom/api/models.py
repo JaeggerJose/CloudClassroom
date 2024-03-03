@@ -40,3 +40,5 @@ class Cluster(models.Model):
 # admin site    
 admin.site.register(Job)
 admin.site.register(Cluster)
+
+
